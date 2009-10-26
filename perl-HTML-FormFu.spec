@@ -9,7 +9,7 @@ Summary:	HTML::FormFu - HTML Form Creation, Rendering and Validation Framework
 #Summary(pl.UTF-8):
 Name:		perl-HTML-FormFu
 Version:	0.05001
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -90,6 +90,9 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 %{perl_vendorlib}/HTML/*.pm
 %{perl_vendorlib}/HTML/FormFu
+%dir %{perl_vendorlib}/auto/share/dist/HTML-FormFu
+%dir %{perl_vendorlib}/auto/share/dist/HTML-FormFu/templates
+%dir %{perl_vendorlib}/auto/share/dist/HTML-FormFu/templates/tt
 %{perl_vendorlib}/auto/share/dist/HTML-FormFu/templates/tt/xhtml/
 %{_mandir}/man?/*
 
